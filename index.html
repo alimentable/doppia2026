@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>DoppiaW · Viaje y Llegada</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: #050505;
+    color: #e5e5e5;
+    -webkit-font-smoothing: antialiased;
+}
+.card {
+    background: #121212;
+    border: 1px solid #262626;
+    border-radius: 24px;
+}
+.hero-panel {
+    background: linear-gradient(145deg, #171717, #0a0a0a);
+    border: 1px solid #262626;
+    border-radius: 28px;
+}
+.badge {
+    display: inline-flex;
+    align-items: center;
+    border-radius: 999px;
+    padding: 0.35rem 0.75rem;
+    font-size: 0.65rem;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+ul li {
+    margin-bottom: 0.55rem;
+    line-height: 1.5;
+}
+ul li strong { color: #ffffff; }
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #050505; }
+::-webkit-scrollbar-thumb { background: #3f3f46; border-radius: 4px; }
+@media print {
+    body { background: white; color: black; }
+    .card, .hero-panel { background: white; border: 1px solid #ccc; color: black !important; }
+    .text-neutral-400, .text-neutral-300, .text-neutral-500 { color: #444 !important; }
+    .text-white { color: black !important; }
+}
+</style>
+</head>
+
+<body class="min-h-screen pb-16">
+
+<main class="max-w-6xl mx-auto px-4 py-6 md:py-10 space-y-6">
+
+<!-- HERO -->
+<section class="hero-panel p-6 md:p-10 border-t-4 border-t-orange-500">
+    <div class="grid lg:grid-cols-12 gap-8 items-center">
+        <div class="lg:col-span-8">
+            <span class="badge bg-orange-500/10 text-orange-400 border border-orange-500/20 mb-4">
+                DOPPIAW · VIAJE Y LLEGADA
+            </span>
+            <h1 class="text-3xl md:text-5xl lg:text-6xl font-black tracking-tight leading-[1.05] mb-4 text-white">
+                Llegar estable, no perfecto.
+            </h1>
+            <p class="text-neutral-400 text-sm md:text-base leading-relaxed max-w-2xl">
+                Esta guía es tu plan de acción en movimiento. El objetivo no es mantener una dieta perfecta,
+                sino darte las herramientas clave para superar el aeropuerto, el vuelo y la llegada con un <strong>intestino tranquilo,
+                hidratación suficiente, piernas ligeras y cero decisiones improvisadas.</strong>
+            </p>
+        </div>
+
+        <div class="lg:col-span-4 bg-black/50 border border-neutral-800 rounded-2xl p-6">
+            <h3 class="font-black text-white text-lg mb-2">La idea central</h3>
+            <p class="text-sm text-neutral-400 leading-relaxed">
+                El viaje también cuenta como carga. Hoy no necesitas hacer algo extraordinario:
+                necesitas evitar errores grandes y llegar con margen.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- AUDIO SUPPORT -->
+<section class="card p-5 md:p-6 border-l-4 border-l-sky-500">
+    <div class="grid lg:grid-cols-12 gap-5 items-center">
+        <div class="lg:col-span-8">
+            <span class="badge bg-sky-500/10 text-sky-400 border border-sky-500/20 mb-3">
+                Guía en Audio
+            </span>
+            <h2 class="text-2xl md:text-3xl font-black tracking-tight text-white mb-2">
+                Del aeropuerto a la llegada.
+            </h2>
+            <p class="text-sm text-neutral-400 leading-relaxed">
+                Escúchalo antes de abordar, durante el vuelo o al aterrizar. Esta sección resume las decisiones vitales
+                para cuando haya hambre, prisa, sueño, idioma distinto o cansancio.
+            </p>
+        </div>
+        
+        <div class="lg:col-span-4 bg-neutral-950 border border-neutral-800 rounded-2xl p-4 flex flex-col justify-center">
+            <p class="text-xs text-sky-400 font-bold uppercase tracking-widest mb-3 flex items-center justify-center gap-2">
+                <span>🎧</span> Reproducir Guía
+            </p>
+            <div class="w-full rounded-xl overflow-hidden border border-neutral-800/50 bg-black">
+                <!-- Se cambia /view por /preview en el enlace de Drive -->
+                <iframe 
+                    src="https://drive.google.com/file/d/1NJOEAkwBATUBxwB4mWtM3cL9vCqPdDEj/preview" 
+                    width="100%" 
+                    height="120" 
+                    allow="autoplay" 
+                    class="w-full border-0">
+                </iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- QUÉ BUSCAMOS PROTEGER -->
+<section class="grid lg:grid-cols-4 md:grid-cols-2 gap-4">
+    <div class="card p-5 border-l-2 border-l-orange-500">
+        <p class="text-xl mb-2">🧻</p>
+        <h3 class="font-black text-white text-sm uppercase tracking-wider mb-1">Intestino</h3>
+        <p class="text-xs text-neutral-400">Evitar fibra alta, grasa pesada y comida nueva antes de competir.</p>
+    </div>
+    <div class="card p-5 border-l-2 border-l-sky-500">
+        <p class="text-xl mb-2">💧</p>
+        <h3 class="font-black text-white text-sm uppercase tracking-wider mb-1">Hidratación</h3>
+        <p class="text-xs text-neutral-400">Agua en sorbos, electrolito si hace falta, sin atascarte de líquido.</p>
+    </div>
+    <div class="card p-5 border-l-2 border-l-emerald-500">
+        <p class="text-xl mb-2">🦵</p>
+        <h3 class="font-black text-white text-sm uppercase tracking-wider mb-1">Piernas</h3>
+        <p class="text-xs text-neutral-400">Menos rigidez por estar sentado, movilidad suave y cero caminatas inútiles.</p>
+    </div>
+    <div class="card p-5 border-l-2 border-l-indigo-500">
+        <p class="text-xl mb-2">🌙</p>
+        <h3 class="font-black text-white text-sm uppercase tracking-wider mb-1">Jet lag</h3>
+        <p class="text-xs text-neutral-400">Luz, comidas, café y sueño como señales para entrar al horario local.</p>
+    </div>
+</section>
+
+<!-- REGLA MADRE -->
+<section class="hero-panel p-6 md:p-8 border border-neutral-700">
+    <div class="grid lg:grid-cols-12 gap-6 items-center">
+        <div class="lg:col-span-5">
+            <span class="badge bg-white/10 text-white border border-white/20 mb-4">Regla madre</span>
+            <h2 class="text-3xl md:text-4xl font-black text-white tracking-tight leading-tight">
+                No improvises cuando estés cansado.
+            </h2>
+        </div>
+        <div class="lg:col-span-7">
+            <p class="text-sm md:text-base text-neutral-300 leading-relaxed">
+                En aeropuerto, avión o llegada, el problema no es falta de conocimiento. El problema es decidir con sueño,
+                hambre, prisa o ansiedad. Si dudas, vuelve a esta fórmula:
+            </p>
+            <div class="grid md:grid-cols-3 gap-3 mt-5">
+                <div class="bg-black/50 border border-neutral-800 rounded-xl p-4">
+                    <p class="text-orange-400 font-black text-sm">Carbohidrato fácil</p>
+                    <p class="text-xs text-neutral-500">Pan, arroz, pasta, papa, fruta pelable.</p>
+                </div>
+                <div class="bg-black/50 border border-neutral-800 rounded-xl p-4">
+                    <p class="text-emerald-400 font-black text-sm">Proteína ligera</p>
+                    <p class="text-xs text-neutral-500">Pollo, huevo, jamón magro, yogurt si toleras.</p>
+                </div>
+                <div class="bg-black/50 border border-neutral-800 rounded-xl p-4">
+                    <p class="text-sky-400 font-black text-sm">Agua en sorbos</p>
+                    <p class="text-xs text-neutral-500">Hidratar sin llegar seco ni interrumpir sueño.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- LO QUE NO / SI -->
+<section class="grid md:grid-cols-2 gap-6">
+    <div class="card p-6 md:p-8 bg-[#1a0f0f] border-red-900/30">
+        <h2 class="text-2xl font-black mb-5 text-red-400 flex items-center gap-3">
+            <span>❌</span> Lo que NO buscamos
+        </h2>
+        <ul class="text-sm text-neutral-300 space-y-3">
+            <li>• Subir al avión con <strong>hambre extrema</strong>.</li>
+            <li>• Resolver con comida muy grasosa o picante.</li>
+            <li>• Comer ensaladas enormes o demasiada fibra “porque es sano”.</li>
+            <li>• Tomar alcohol para dormir.</li>
+            <li>• Abusar del café por ansiedad o cansancio.</li>
+            <li>• Caminar de más con maletas al aterrizar.</li>
+            <li>• Probar comida o suplementos nuevos antes de competir.</li>
+        </ul>
+    </div>
+
+    <div class="card p-6 md:p-8 bg-[#0a1711] border-emerald-900/30">
+        <h2 class="text-2xl font-black mb-5 text-emerald-400 flex items-center gap-3">
+            <span>✅</span> Lo que SÍ buscamos
+        </h2>
+        <ul class="text-sm text-neutral-300 space-y-3">
+            <li>• Comer algo <strong>simple y seguro</strong> antes de abordar.</li>
+            <li>• Llegar a la cena del avión sin hambre desesperada.</li>
+            <li>• Beber agua en sorbos durante el vuelo.</li>
+            <li>• Dormir algo, aunque no sea perfecto.</li>
+            <li>• Mover piernas para reducir rigidez e inflamación.</li>
+            <li>• Usar luz y comida local para adaptarse al horario.</li>
+            <li>• Aterrizar con margen, no con el cuerpo peleando.</li>
+        </ul>
+    </div>
+</section>
+
+<!-- AHORA EN AEROPUERTO -->
+<section class="hero-panel p-6 md:p-8">
+    <div class="mb-6">
+        <span class="badge bg-orange-500/10 text-orange-400 border border-orange-500/20 mb-3">1 · Antes de abordar</span>
+        <h2 class="text-2xl md:text-3xl font-black tracking-tight text-white">
+            Qué comer en aeropuerto
+        </h2>
+        <p class="text-sm text-neutral-400 mt-2">
+            No necesitas una comida perfecta. Necesitas una comida que te deje satisfecho sin subir inflamado al avión.
+        </p>
+    </div>
+
+    <div class="grid lg:grid-cols-2 gap-6">
+        <div class="bg-black/50 border border-neutral-800 rounded-2xl p-5">
+            <h3 class="font-black text-lg mb-3 text-white flex items-center gap-2"><span>✅</span> Preferir</h3>
+            <ul class="text-sm text-neutral-300 space-y-2">
+                <li>• <strong>Sándwich sencillo</strong> o pan simple.</li>
+                <li>• Arroz, pasta simple o papa si hay opción poco grasosa.</li>
+                <li>• Pollo, huevo, jamón magro o pavo.</li>
+                <li>• Fruta que se pueda pelar.</li>
+                <li>• Agua; electrolito moderado si hace falta.</li>
+            </ul>
+        </div>
+        <div class="bg-black/50 border border-neutral-800 rounded-2xl p-5">
+            <h3 class="font-black text-lg mb-3 text-white flex items-center gap-2"><span>⚠️</span> Evitar</h3>
+            <ul class="text-sm text-neutral-300 space-y-2">
+                <li>• Frituras, tocino, hamburguesa muy grasosa.</li>
+                <li>• Pizza muy cargada o con embutidos pesados.</li>
+                <li>• Picante, salsas cremosas o comida muy condimentada.</li>
+                <li>• Ensaladas enormes, leguminosas o exceso de fibra.</li>
+                <li>• Lácteos pesados, alcohol y exceso de café.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- SI ESTÁS EN RESTAURANTE -->
+<section class="card p-6 md:p-8 border-l-4 border-l-orange-500">
+    <h2 class="text-2xl font-black mb-2 text-white">Si estás en restaurante y no sabes qué pedir</h2>
+    <p class="text-sm text-neutral-400 mb-5">
+        Pide lo más “aburrido” que funcione. En este momento, aburrido significa seguro.
+    </p>
+
+    <div class="grid md:grid-cols-3 gap-4">
+        <div class="bg-neutral-900 rounded-2xl p-4 border border-neutral-800">
+            <p class="text-orange-400 font-black text-sm mb-1">Opción 1</p>
+            <p class="text-sm text-neutral-300">Sándwich de pollo/pavo + agua.</p>
+        </div>
+        <div class="bg-neutral-900 rounded-2xl p-4 border border-neutral-800">
+            <p class="text-orange-400 font-black text-sm mb-1">Opción 2</p>
+            <p class="text-sm text-neutral-300">Pasta simple o arroz con proteína ligera.</p>
+        </div>
+        <div class="bg-neutral-900 rounded-2xl p-4 border border-neutral-800">
+            <p class="text-orange-400 font-black text-sm mb-1">Opción 3</p>
+            <p class="text-sm text-neutral-300">Omelette simple + pan + agua.</p>
+        </div>
+    </div>
+    <p class="text-xs text-neutral-500 mt-5 font-bold">
+        Regla: primero compite, después pruebas cosas nuevas.
+    </p>
+</section>
+
+<!-- VUELO -->
+<section class="card p-6 md:p-8">
+    <div class="mb-6">
+        <span class="badge bg-sky-500/10 text-sky-400 border border-sky-500/20 mb-3">2 · Durante el vuelo</span>
+        <h2 class="text-2xl font-black tracking-tight text-white mb-2">El avión también cuenta como carga</h2>
+        <p class="text-sm text-neutral-400">Estar sentado, dormir incómodo, aire seco y comida distinta también impactan recuperación.</p>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div class="bg-neutral-900 border border-neutral-800 rounded-2xl p-5">
+            <p class="text-2xl mb-3">💧</p>
+            <h3 class="font-black text-white mb-2">Agua en sorbos</h3>
+            <p class="text-xs text-neutral-400">Ni seco ni atascarte. Mantén hidratación sin romper sueño por ir al baño.</p>
+        </div>
+        <div class="bg-neutral-900 border border-neutral-800 rounded-2xl p-5">
+            <p class="text-2xl mb-3">🍽️</p>
+            <h3 class="font-black text-white mb-2">Cena del vuelo</h3>
+            <p class="text-xs text-neutral-400">Elige lo simple. Pan, arroz, pasta, papa o proteína ligera si están disponibles.</p>
+        </div>
+        <div class="bg-neutral-900 border border-neutral-800 rounded-2xl p-5">
+            <p class="text-2xl mb-3">🦶</p>
+            <h3 class="font-black text-white mb-2">Piernas</h3>
+            <p class="text-xs text-neutral-400">Mueve tobillos, cambia postura y camina cuando sea posible.</p>
+        </div>
+        <div class="bg-neutral-900 border border-neutral-800 rounded-2xl p-5">
+            <p class="text-2xl mb-3">🌙</p>
+            <h3 class="font-black text-white mb-2">Sueño</h3>
+            <p class="text-xs text-neutral-400">Antifaz, tapones, menos pantalla. Dormir algo ya suma.</p>
+        </div>
+    </div>
+</section>
+
+<!-- JET LAG -->
+<section class="grid lg:grid-cols-2 gap-6">
+    <div class="card p-6 md:p-8">
+        <h2 class="text-2xl font-black mb-5 text-white flex items-center gap-3">
+            <span>🌍</span> Jet lag sin complicarte
+        </h2>
+        <p class="text-sm text-neutral-400 mb-5">
+            No es solo sueño. También puede mover hambre, digestión, energía y decisiones.
+            La meta no es sentirte perfecto al llegar; es ayudar al cuerpo a ubicarse.
+        </p>
+        <ul class="text-sm text-neutral-300 space-y-3">
+            <li>• <strong>Luz natural:</strong> si llegas de día, úsala.</li>
+            <li>• <strong>Comida en horario local:</strong> aunque sea una porción pequeña.</li>
+            <li>• <strong>Café temprano:</strong> útil si toca estar despierto; evitar tarde.</li>
+            <li>• <strong>Siesta corta:</strong> si hace falta, temprano y breve.</li>
+        </ul>
+    </div>
+
+    <div class="card p-6 md:p-8 bg-[#0b1220] border-sky-900/30">
+        <h2 class="text-2xl font-black mb-5 text-sky-400 flex items-center gap-3">
+            <span>🛬</span> Al aterrizar
+        </h2>
+        <ul class="text-sm text-neutral-300 space-y-3">
+            <li>• No resuelvas todo solo si tienes apoyo local.</li>
+            <li>• Consigue agua antes de quedarte sin energía.</li>
+            <li>• Evita caminar de más con maletas.</li>
+            <li>• Haz una comida simple antes de que llegue hambre extrema.</li>
+            <li>• Llega al hospedaje, ordena suplementos y baja revoluciones.</li>
+        </ul>
+    </div>
+</section>
+
+<!-- PRIMERA COMPRA -->
+<section class="hero-panel p-6 md:p-8">
+    <div class="mb-6">
+        <span class="badge bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 mb-3">3 · Primeras horas</span>
+        <h2 class="text-2xl md:text-3xl font-black tracking-tight text-white">Primera compra: no improvisar después</h2>
+        <p class="text-sm text-neutral-400 mt-2">
+            No tiene que ser perfecta. Tiene que resolver agua, energía y comida segura para las próximas horas.
+        </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div class="bg-black/50 border border-neutral-800 rounded-2xl p-5">
+            <h3 class="font-black text-orange-400 text-sm uppercase tracking-widest mb-3">Carbohidratos</h3>
+            <ul class="text-xs text-neutral-300 space-y-2">
+                <li>• Pan o focaccia simple.</li>
+                <li>• Pasta, arroz o papa.</li>
+                <li>• Cereal simple.</li>
+                <li>• Miel o mermelada.</li>
+            </ul>
+        </div>
+        <div class="bg-black/50 border border-neutral-800 rounded-2xl p-5">
+            <h3 class="font-black text-emerald-400 text-sm uppercase tracking-widest mb-3">Proteína</h3>
+            <ul class="text-xs text-neutral-300 space-y-2">
+                <li>• Yogurt si lo toleras.</li>
+                <li>• Huevo.</li>
+                <li>• Pollo.</li>
+                <li>• Jamón cocido magro.</li>
+            </ul>
+        </div>
+        <div class="bg-black/50 border border-neutral-800 rounded-2xl p-5">
+            <h3 class="font-black text-sky-400 text-sm uppercase tracking-widest mb-3">Líquidos</h3>
+            <ul class="text-xs text-neutral-300 space-y-2">
+                <li>• Agua.</li>
+                <li>• Bebida isotónica.</li>
+                <li>• Jugo si se antoja.</li>
+                <li>• Electrolitos si hace falta.</li>
+            </ul>
+        </div>
+        <div class="bg-black/50 border border-neutral-800 rounded-2xl p-5">
+            <h3 class="font-black text-indigo-400 text-sm uppercase tracking-widest mb-3">Snacks</h3>
+            <ul class="text-xs text-neutral-300 space-y-2">
+                <li>• Galletas saladas.</li>
+                <li>• Rice cakes.</li>
+                <li>• Plátano o manzana.</li>
+                <li>• Gomitas/barrita simple.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- HIGIENE Y SUPLEMENTOS -->
+<section class="grid lg:grid-cols-2 gap-6">
+    <div class="card p-6 md:p-8 border-l-4 border-l-emerald-500">
+        <h2 class="text-2xl font-black mb-2 text-white">Higiene alimentaria</h2>
+        <p class="text-sm text-neutral-400 mb-5">No es paranoia. Es evitar que una diarrea de viaje comprometa la carrera.</p>
+        <ul class="text-sm text-neutral-300 space-y-3">
+            <li>• Lavado de manos o gel antes de comer.</li>
+            <li>• Agua segura; cuidado con hielo dudoso.</li>
+            <li>• Fruta que se pueda pelar.</li>
+            <li>• Carnes bien cocidas.</li>
+            <li>• Cuidado con buffet, crudos o comida tibia por mucho tiempo.</li>
+        </ul>
+    </div>
+
+    <div class="card p-6 md:p-8 border-l-4 border-l-orange-500">
+        <h2 class="text-2xl font-black mb-2 text-white">Suplementos y polvos</h2>
+        <p class="text-sm text-neutral-400 mb-5">Todo debe ser claro, identificable y probado.</p>
+        <ul class="text-sm text-neutral-300 space-y-3">
+            <li>• Envases originales cuando se pueda.</li>
+            <li>• Bolsas o sobres claramente etiquetados.</li>
+            <li>• Dosis separadas.</li>
+            <li>• No mezclar polvos sin nombre.</li>
+            <li>• No aceptar suplementos de terceros ni comprar nuevos.</li>
+        </ul>
+    </div>
+</section>
+
+<!-- CHECKLIST -->
+<section class="card p-6 md:p-8">
+    <div class="mb-6">
+        <h2 class="text-2xl font-black tracking-tight text-white mb-2">Checklist de llegada</h2>
+        <p class="text-sm text-neutral-400">Al aterrizar, el objetivo es bajar estrés y asegurar lo básico.</p>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div class="bg-neutral-900 rounded-2xl p-4 border border-neutral-800">
+            <p class="text-emerald-400 font-bold text-sm">Agua asegurada</p>
+            <p class="text-xs text-neutral-500">Antes de pensar en todo lo demás.</p>
+        </div>
+        <div class="bg-neutral-900 rounded-2xl p-4 border border-neutral-800">
+            <p class="text-orange-400 font-bold text-sm">Comida simple</p>
+            <p class="text-xs text-neutral-500">No esperar a hambre extrema.</p>
+        </div>
+        <div class="bg-neutral-900 rounded-2xl p-4 border border-neutral-800">
+            <p class="text-sky-400 font-bold text-sm">Transporte claro</p>
+            <p class="text-xs text-neutral-500">Menos estrés logístico.</p>
+        </div>
+        <div class="bg-neutral-900 rounded-2xl p-4 border border-neutral-800">
+            <p class="text-indigo-400 font-bold text-sm">Piernas cuidadas</p>
+            <p class="text-xs text-neutral-500">Caminar suave, no entrenar.</p>
+        </div>
+        <div class="bg-neutral-900 rounded-2xl p-4 border border-neutral-800">
+            <p class="text-red-400 font-bold text-sm">Intestino tranquilo</p>
+            <p class="text-xs text-neutral-500">Baja grasa, baja fibra, nada nuevo.</p>
+        </div>
+        <div class="bg-neutral-900 rounded-2xl p-4 border border-neutral-800">
+            <p class="text-purple-400 font-bold text-sm">Sueño protegido</p>
+            <p class="text-xs text-neutral-500">Luz cuando toca, oscuridad cuando toca.</p>
+        </div>
+    </div>
+</section>
+
+<!-- CLOSER -->
+<section class="hero-panel p-8 md:p-12 text-center mt-6 border border-neutral-700 shadow-[0_0_40px_rgba(255,255,255,0.03)]">
+    <span class="badge bg-white/10 text-white border border-white/20 mb-4">Cierre del módulo</span>
+    <h2 class="text-3xl md:text-5xl font-black text-white mb-6 uppercase tracking-tight leading-tight">
+        Hoy gana <br><span class="text-neutral-500">lo simple.</span>
+    </h2>
+    <p class="text-neutral-300 text-sm md:text-base max-w-2xl mx-auto mb-8 leading-relaxed">
+        No busques la comida perfecta. Busca la comida segura.
+        Tu intestino también viaja. Llegar estable vale más que comer perfecto.
+    </p>
+
+    <div class="flex flex-wrap justify-center gap-2 max-w-3xl mx-auto">
+        <span class="bg-black/50 border border-neutral-800 text-neutral-300 text-xs px-3 py-1.5 rounded-full font-bold">✅ Carbohidrato fácil</span>
+        <span class="bg-black/50 border border-neutral-800 text-neutral-300 text-xs px-3 py-1.5 rounded-full font-bold">✅ Proteína ligera</span>
+        <span class="bg-black/50 border border-neutral-800 text-neutral-300 text-xs px-3 py-1.5 rounded-full font-bold">✅ Agua en sorbos</span>
+        <span class="bg-black/50 border border-neutral-800 text-neutral-300 text-xs px-3 py-1.5 rounded-full font-bold">✅ Movimiento suave</span>
+        <span class="bg-emerald-900/30 border border-emerald-500/30 text-emerald-400 text-xs px-3 py-1.5 rounded-full font-bold">Cero improvisación cansado.</span>
+    </div>
+</section>
+
+</main>
+</body>
+</html>
